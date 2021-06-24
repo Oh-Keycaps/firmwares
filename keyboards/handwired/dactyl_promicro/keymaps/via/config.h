@@ -1,5 +1,18 @@
 #pragma once
 
+#define VIAL_KEYBOARD_UID {0x42, 0x89, 0xB1, 0x9A, 0x9A, 0x65, 0x7D, 0x46}
+
+#undef VIAL_UNLOCK_COMBO_ROWS
+#define VIAL_UNLOCK_COMBO_ROWS { 0, 0 }
+#undef VIAL_UNLOCK_COMBO_COLS
+#define VIAL_UNLOCK_COMBO_COLS { 0, 0 }
+
+#undef VENDOR_ID
+#define VENDOR_ID 0x4450
+
+#undef MANUFACTURER
+#define MANUFACTURER Oh Key Caps
+
 #define USE_SERIAL
 #define EE_HANDS
 
