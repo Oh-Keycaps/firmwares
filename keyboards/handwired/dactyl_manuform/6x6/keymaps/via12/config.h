@@ -27,7 +27,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VIAL_UNLOCK_COMBO_COLS { 0, 0 }
 
 #undef MANUFACTURER
-#define MANUFACTURER Oh Key Caps
+#define MANUFACTURER OhKeycaps
 
 #define USE_SERIAL
 #define EE_HANDS

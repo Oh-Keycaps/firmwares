@@ -11,7 +11,7 @@
 #define VENDOR_ID 0x4450
 
 #undef MANUFACTURER
-#define MANUFACTURER Oh Key Caps
+#define MANUFACTURER OhKeycaps
 
 #define USE_SERIAL
 #define EE_HANDS
