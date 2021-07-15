@@ -9,6 +9,8 @@
 
 #undef VENDOR_ID
 #define VENDOR_ID 0x4450
+#undef PRODUCT
+#define PRODUCT Dactyl
 
 #undef MANUFACTURER
 #define MANUFACTURER OhKeycaps
