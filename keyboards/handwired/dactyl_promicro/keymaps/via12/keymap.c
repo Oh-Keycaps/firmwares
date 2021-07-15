@@ -1,13 +1,14 @@
 #include QMK_KEYBOARD_H
 
 #define _QWERTY 0
-#define _LOWER 1
-#define _RAISE 2
+#define _DVORAK 1
+#define _LOWER 2
+#define _RAISE 3
 
 #define RAISE MO(_RAISE)
 #define LOWER MO(_LOWER)
 
-#define ONE_GRV LT(1,KC_GRAVE)
+#define ONE_GRV LT(_LOWER,KC_GRAVE)
 #define CTL_Z LCTL_T(KC_Z)
 #define ALT_INS LALT(KC_INS)
 #define ALT_MENU LALT_T(KC_MENU)
@@ -28,6 +29,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                 KC_DEL ,KC_LCTL,KC_LALT,       KC_LGUI,KC_RCTL,KC_ENT  ,
                                                                 KC_HOME,       KC_MEH,
                                                                 KC_END ,       BUILD
+    ),
+    [_DVORAK] = LAYOUT_6x6(
+        _______,_______,_______,_______,_______,_______,                                        _______,_______,_______,_______,_______,_______,
+        _______,KC_QUOT,KC_COMM,KC_DOT ,KC_P   ,KC_Y   ,                                        KC_F   ,KC_G   ,KC_C   ,KC_R   ,KC_L   ,CTL_SLS,
+        _______, KC_A  , KC_O  , KC_E  , KC_U  , KC_I  ,                                         KC_D  ,KC_H   , KC_T  ,KC_N   ,KC_S   ,KC_MINS,
+        _______,KC_QUOT, KC_Q  , KC_J  , KC_K  ,KC_X   ,                                         KC_B  , KC_M  ,KC_W   , KC_V  , KC_Z  ,_______,
+        _______,_______,_______,_______,_______,_______,                                        _______,_______,_______,_______,_______,_______,
+                                                _______,_______,_______,       _______,_______,_______,
+                                                                _______,       _______,
+                                                                _______,       _______
     ),
     [_LOWER] = LAYOUT_6x6(
         _______,KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,                                        KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,KC_F11 ,

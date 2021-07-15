@@ -1,7 +1,9 @@
 #include QMK_KEYBOARD_H
+
 #define _BASE 0
-#define _RAISE 1
-#define _LOWER 2
+#define _DVORAK 1
+#define _RAISE 2
+#define _LOWER 3
 
 #define SFT_ESC  LSFT_T(KC_BSPC)
 #define CTL_BSPC CTL_T(KC_DEL)
@@ -27,6 +29,15 @@ KC_Z   ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,                                KC_N   ,
                         SFT_ESC,CTL_BSPC,                       ALT_SPC,SFT_ENT,                                 \
                                 KC_TAB ,KC_HOME,        KC_END ,GUI_T(KC_LBRC),                                  \
                                 RAISE  ,KC_GRV ,        KC_RBRC,LOWER                                            \
+),
+[_DVORAK] = LAYOUT( \
+_______,_______,_______,_______,_______,                                _______,_______,_______,_______,_______, \
+_______,_______,_______,_______,_______,                                _______,_______,_______,_______,_______, \
+_______,_______,_______,_______,_______,                                _______,_______,_______,_______,_______, \
+        _______,_______,                                                                _______,_______,         \
+                        _______,_______,                        _______,_______,                                 \
+                                _______,_______,        _______,_______,                                         \
+                                _______,_______,        _______,_______                                          \
 ),
 [_RAISE] = LAYOUT( \
 RESET  ,_______,KC_MU  ,_______,_______,                                KC_VOLU,_______,KC_UP  ,_______,KC_PGUP, \
