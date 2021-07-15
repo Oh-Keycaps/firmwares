@@ -2,7 +2,7 @@
     "name": "Dactyl Manuform 5x6",
     "productId": "0x3536",
     "vendorId": "0x444d",
-    "lighting": { "extends": "qmk_rgblight" },
+    "lighting": "qmk_rgblight",
     "matrix": { "rows": 12, "cols": 6},
     "layouts":{
         "keymap" :[
