@@ -20,12 +20,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define VIAL_KEYBOARD_UID {0x80, 0x05, 0x90, 0x06, 0xB3, 0xB0, 0x1B, 0x80}
 
-/* top-left and top-right keys */
-#undef VIAL_UNLOCK_COMBO_ROWS
-#define VIAL_UNLOCK_COMBO_ROWS { 0, 5 }
-#undef VIAL_UNLOCK_COMBO_COLS
-#define VIAL_UNLOCK_COMBO_COLS { 0, 0 }
-
 #undef MANUFACTURER
 #define MANUFACTURER OhKeycaps
 
