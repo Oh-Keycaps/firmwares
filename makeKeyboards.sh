@@ -14,6 +14,7 @@ qmk compile -kb handwired/dactyl_manuform/6x6 -km via
 qmk compile -kb handwired/dactyl_manuform/6x6 -km via12
 qmk compile -kb handwired/dactyl_promicro -km via
 qmk compile -kb handwired/dactyl_promicro -km via12
+qmk compile -kb handwired/dactyl_promicro/f411 -km via12
 popd
 
 mv -v $qmk/handwired_dactyl_manuform_4x5*.hex ./keyboards/handwired/dactyl_manuform/4x5/
