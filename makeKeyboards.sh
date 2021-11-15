@@ -1,7 +1,11 @@
-qmk=../../vial-kb/vial-qmk
-cp -rv keyboards/ $qmk
+vial=../../vial-kb/vial-qmk
+qmk=../../qmk/qmk_firmware
+cp -r keyboards/ $qmk && cp -r keyboards/ $vial
+cp -rv $qmk/drivers/ $vial/drivers/
 
-pushd $qmk
+
+
+pushd $vial
 qmk compile -kb handwired/dactyl_manuform/4x5 -km via
 qmk compile -kb handwired/dactyl_manuform/4x5 -km via12
 qmk compile -kb handwired/dactyl_manuform/4x6 -km via
@@ -14,7 +18,7 @@ qmk compile -kb handwired/dactyl_manuform/6x6 -km via
 qmk compile -kb handwired/dactyl_manuform/6x6 -km via12
 qmk compile -kb handwired/dactyl_promicro -km via
 qmk compile -kb handwired/dactyl_promicro -km via12
-qmk compile -kb handwired/dactyl_promicro/f411 -km via12
+qmk compile -kb handwired/dactyl_promicro/f411 -km ert
 popd
 
 mv -v $qmk/handwired_dactyl_manuform_4x5*.hex ./keyboards/handwired/dactyl_manuform/4x5/
