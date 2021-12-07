@@ -14,3 +14,6 @@ We already have the eeprom flashed for you with left and right hand. Please foll
 ## How to compile
 the files and folders we have laid out match the qmk layout. copy `*.c;*.h;*.mk` files from the keyboard you want to build into that same folder in the [QMK repository](https://github.com/qmk/qmk_firmware) and run the make command.
 You'll want to follow their guildlines and documentation on how to compile.
+
+# Vial support
+You need to check out github.com/vial-kb/vial-qmk to commit `544a79648e7867b2f2265d0c1085f895ef6611af` the latest commit (`2eee95eac` as of this writing) has made the image too large for the elite-c.
