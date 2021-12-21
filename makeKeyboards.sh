@@ -8,8 +8,10 @@ qmk compile -kb handwired/dactyl_manuform/4x6 -km via
 qmk compile -kb handwired/dactyl_manuform/4x6 -km via12
 qmk compile -kb handwired/dactyl_manuform/5x6 -km via
 qmk compile -kb handwired/dactyl_manuform/5x6 -km via12
+qmk compile -kb handwired/dactyl_manuform/5x6 -km via21
 qmk compile -kb handwired/dactyl_manuform/5x7 -km via
 qmk compile -kb handwired/dactyl_manuform/5x7 -km via12
+qmk compile -kb handwired/dactyl_manuform/5x7 -km via24
 qmk compile -kb handwired/dactyl_manuform/6x6 -km via
 qmk compile -kb handwired/dactyl_manuform/6x6 -km via12
 qmk compile -kb handwired/dactyl_promicro -km via
