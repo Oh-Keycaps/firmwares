@@ -48,5 +48,5 @@ EXPR006,RGB_MOD,RGB_SPD,RGB_SPI,_______,_______,                         _______
                 EXPR007,KC_GRV ,                                                         DF(0)  ,DF(1)                  ,
                                 _______,RGB_TOG,                         RGB_TOG,_______                                ,
                                         _______,_______,         _______,_______                                        ,
-                                        _______,RESET  ,         RESET  ,_______)
+                                        _______,QK_BOOT,         QK_BOOT,_______)
 };

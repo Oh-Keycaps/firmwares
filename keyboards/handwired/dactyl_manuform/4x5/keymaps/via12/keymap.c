@@ -40,7 +40,7 @@ _______,_______,_______,_______,_______,                                _______,
                                 _______,_______,        _______,_______                                          \
 ),
 [_RAISE] = LAYOUT( \
-RESET  ,_______,KC_MU  ,_______,_______,                                KC_VOLU,_______,KC_UP  ,_______,KC_PGUP, \
+QK_BOOT,_______,KC_MU  ,_______,_______,                                KC_VOLU,_______,KC_UP  ,_______,KC_PGUP, \
 _______,KC_ML  ,KC_MD  ,KC_MR  ,_______,                                KC_MUTE,KC_LEFT,KC_DOWN,KC_RGHT,KC_PGDN, \
 _______,_______,_______,_______,_______,                                KC_VOLD,KC_SLSH,KC_BSLS,KC_QUES,KC_PIPE, \
         _______,_______,                                                                KC_MB1 ,KC_MB2 ,         \
@@ -52,7 +52,7 @@ _______,_______,_______,_______,_______,                                KC_VOLD,
 KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,                                KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 , \
 KC_1   ,KC_2   ,KC_3   ,KC_4   ,KC_5   ,                                KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   , \
 KC_EXLM,KC_AT  ,KC_HASH,KC_DLR ,KC_PERC,                                KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN, \
-        KC_F11 ,KC_F12 ,                                                                RESET  ,DEBUG  ,         \
+        KC_F11 ,KC_F12 ,                                                                QK_BOOT,DEBUG  ,         \
                         _______,_______,                        _______,_______,                                 \
                                 _______,_______,        _______,_______,                                         \
                                 _______,_______,        _______,_______                                          \
