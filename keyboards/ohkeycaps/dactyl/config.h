@@ -10,11 +10,11 @@
 #define PRODUCT_ID   0x4C43
 #define DEVICE_VER   0x0001
 #define MANUFACTURER "Oh, Keycaps!"
-#define PRODUCT      Lightcycle
+#define PRODUCT      Dactyl
 #define VIAL_KEYBOARD_UID { 0xD5, 0xC1, 0x68, 0xF8, 0xCC, 0x5D, 0xB, 0x49 }
 
 /* key matrix size */
-#define MATRIX_ROWS 10
+#define MATRIX_ROWS 12
 #define MATRIX_COLS 6
 
 /*
@@ -27,9 +27,6 @@
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_COL_PINS { D4, C6, D7, E6, B4, B5 }
-#define MATRIX_ROW_PINS { F7, B1, B3, B2, B6 }
-#define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -37,7 +34,6 @@
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
 
 //#define LED_NUM_LOCK_PIN B0
 //#define LED_CAPS_LOCK_PIN B1
@@ -51,8 +47,6 @@
 #define USE_SERIAL
 #define EE_HANDS
 
-
-#define RGB_DI_PIN D3
 #ifdef RGB_DI_PIN
 #    define RGBLED_NUM 12
 #    define RGBLED_SPLIT { 6, 6}
@@ -133,10 +127,6 @@
 //#define NO_ACTION_LAYER
 //#define NO_ACTION_TAPPING
 //#define NO_ACTION_ONESHOT
-
-/* disable these deprecated features by default */
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
 
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
